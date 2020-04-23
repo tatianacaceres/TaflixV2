@@ -9,6 +9,7 @@ public class Serie extends Contenido {
     // Recorrer cada temporada
     // Si el nro de temporada del ciclo es igual a "numero"
     // Devolver esa temporada
+	public Clasificacion clasificacion;
 
     public Temporada getTemporada(int nro){
         
