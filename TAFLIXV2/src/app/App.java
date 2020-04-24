@@ -14,14 +14,10 @@ public class App {
     
             miTaflix.inicializarCatalogo();
     
-            Serie lasChicasDelCable = miTaflix.buscarSerie("Las chicas del cable");
+            Serie serie1 = miTaflix.buscarSerie("Las chicas del cable");
     
-            Temporada laMejorTemporada = lasChicasDelCable.getTemporada(1);
+            Temporada laMejorTemporada = serie1.getTemporada(2);
 
-            Serie freud = miTaflix.buscarSerie("Freud");
-    
-            Temporada laMejorTemporada = lasChicasDelCable.getTemporada(1);
-    
             Episodio elTop;
     
             elTop = laMejorTemporada.getEpisodio(1);
@@ -33,8 +29,6 @@ public class App {
             elTop = laMejorTemporada.getEpisodio(20);
     
             elTop.reproducir();
-
-
 
             System.out.println("Empezando otra cosa");
             Episodio epiDemo;

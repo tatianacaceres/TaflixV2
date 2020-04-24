@@ -2,8 +2,14 @@ package app;
 
 public class Websodio extends Episodio{
 
+    public Websodio(int numero, String nombre, String url, int duracionEnMinutos){
+        super (numero, nombre, duracionEnMinutos);
+
+        this.url = url;
+        
+    }
+
     public String url;
-	public int duracion;
 
     @Override // anotacion que indica que el metodo se sobre escribe (redefinicion)
     public void reproducir() {

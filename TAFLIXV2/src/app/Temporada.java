@@ -8,7 +8,9 @@ public class Temporada {
     public int numero;
     public List<Episodio>episodios = new ArrayList<>();
 
-public Temporada getEpisodio(int nro){
+    public Temporada getEpisodio(int nro){
+       
+        
     //Recorrer cada episodio
     //Si el nro de episodio del ciclo es igual a "nro"
     //Devolver ese episodio
@@ -17,9 +19,8 @@ public Temporada getEpisodio(int nro){
         if (epi.numero == nro){
             return epi;
         }
-    }
     return null;
-
+}
 }
 
 public Websodio getWebsodio(int nro){
