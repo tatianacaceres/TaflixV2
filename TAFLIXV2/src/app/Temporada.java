@@ -16,7 +16,7 @@ public class Temporada {
     //Devolver ese episodio
 
     for (Episodio epi: this.episodios){
-        if (epi.numero == nro){
+        if (epi.getNumero() == nro){
             return epi;
         }
     return null;
@@ -26,7 +26,7 @@ public class Temporada {
 public Websodio getWebsodio(int nro){
 
     for (Websodio epi : this.websodios){
-        if (epi.numero == nro){
+        if (epi.getNumero() == nro){
             return epi;
         }
     }

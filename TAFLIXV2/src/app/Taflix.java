@@ -11,7 +11,7 @@ public class Taflix {
 
     public Serie buscarSerie(String titulo) {
         for (Serie s: this.series){
-            if (s.nombre.equals(titulo))
+            if (s.getNombre().equals(titulo))
             return s;
         }
 
@@ -25,29 +25,33 @@ public class Taflix {
     public void inicializarLasChicasDelCable(){
     
     Serie serie1 = new Serie ();
-    serie1.nombre = "Las chicas del cable";
+    serie1.setNombre("Las chicas del cable");
     this.series.add(serie1);
     
     Actor actor1 = new Actor();
-    actor1.nombre = "Blanca Suarez";
+    actor1.setNombre("Blanca Suarez");
 
     Actor actor2 = new Actor();
-    actor2.nombre = "Yon Gonzalez";
+    actor2.setNombre("Yon Gonzalez");
 
     serie1.elenco.add(actor1);
     serie1.elenco.add(actor2);
 
     Clasificacion clasificacion = new Clasificacion();
-    clasificacion.tipo = "TV MA";
-    clasificacion.edadMin = 17;
-    clasificacion.descripcion = "Contenido inadecuado para audencias menores de 17 años";
+    //clasificacion.tipo = "TV MA";
+    clasificacion.setTipo("TV MA");
+   // clasificacion.edadMin = 17;
+   clasificacion.setEdadMin(17);
+    clasificacion.setDescripcion("Contenido inadecuado para audencias menores de 17 años");
 
     serie1.clasificacion = clasificacion;
 
     Genero genero = new Genero ();
-    genero.descripcion = "Drama";
-    serie1.genero = genero;
-    
+    //genero.descripcion = "Drama";
+    genero.setDescripcion("Drama");
+    //serie1.setGenero = genero;
+    serie1.setGenero(genero);
+
     // Serie 1 Temporadas Las chicas del cable
     Temporada t1 = new Temporada();
     t1.numero = 1;

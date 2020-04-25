@@ -5,16 +5,41 @@ import java.util.List;
 
 public class Contenido {
 
-    public String nombre;
-    public Genero genero;
-    public int año;
-    public String descripcion;
-    public double calificacion;
+    private String nombre;
+    private Genero genero;
+    private int año;
+    private String descripcion;
+    private int calificacion;
     public List<Actor>elenco = new ArrayList<>();
 
     public void reproducir(){
-        
     }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    public Genero getGenero(){
+        return this.genero = genero;
+    }
+    public void setGenero(Genero genero){
+        this.genero = genero;
+    }
+    public String getDescripcion (){
+        return this.descripcion;
+    }
+    public void setDescripcion(String descripcion){
+        this.descripcion = descripcion;
+    }
+    public int getCalificacion(){
+        return this.calificacion;
+    }
+    public void setCalificacion(int calificacion){
+        this.calificacion = calificacion;
+    }
+
 
 
 }
