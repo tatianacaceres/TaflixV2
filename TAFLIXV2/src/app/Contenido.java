@@ -39,7 +39,11 @@ public class Contenido {
     public void setCalificacion(int calificacion){
         this.calificacion = calificacion;
     }
-
-
+    public int getAño(){
+        return this.año;
+    }
+    public void setAño(int año){
+        this.año = año;
+    }
 
 }

@@ -8,25 +8,24 @@ public class Temporada {
     public int numero;
     public List<Episodio>episodios = new ArrayList<>();
 
-    public Temporada getEpisodio(int nro){
-       
-        
+    public Episodio getEpisodio(int numero){
+            
     //Recorrer cada episodio
     //Si el nro de episodio del ciclo es igual a "nro"
     //Devolver ese episodio
 
     for (Episodio epi: this.episodios){
-        if (epi.getNumero() == nro){
+        if (epi.getNumero() == numero){
             return epi;
         }
+    }
     return null;
-}
-}
+    }
 
-public Websodio getWebsodio(int nro){
+public Websodio getWebsodio(int numero){
 
     for (Websodio epi : this.websodios){
-        if (epi.getNumero() == nro){
+        if (epi.getNumero() == numero){
             return epi;
         }
     }
@@ -35,7 +34,7 @@ public Websodio getWebsodio(int nro){
 }
 /**
  * Obtiene un episodio en base a la posicion dentro del ArrayList
- * @param pos
+  @param pos
  * @return
  */
 public Episodio getEpisodioAtPosicion(int pos){

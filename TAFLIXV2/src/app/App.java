@@ -54,8 +54,5 @@ public class App {
            System.out.println("No hay que hacer mas nada con un Episodio");
        }
 
-       int lala;
-    
-       lala = 0;
     }
 }
