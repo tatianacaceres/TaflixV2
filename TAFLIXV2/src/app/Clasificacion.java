@@ -2,6 +2,14 @@ package app;
 
 public class Clasificacion {
 
+public Clasificacion (String tipo, int edadMin, String descripcion){
+    super();
+    this.tipo = tipo;
+    this.edadMin = edadMin;
+    this.descripcion = descripcion;
+
+}
+
     private String tipo;
     private int edadMin;
     private String descripcion;

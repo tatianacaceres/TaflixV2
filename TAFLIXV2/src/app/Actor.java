@@ -1,6 +1,10 @@
 package app;
 
 public class Actor {
+	
+	public Actor (String nombre){
+		this.nombre = nombre;
+	}
 
 	private String nombre;
 

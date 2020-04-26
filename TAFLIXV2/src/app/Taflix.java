@@ -28,25 +28,25 @@ public class Taflix {
     serie1.setNombre("Las chicas del cable");
     this.series.add(serie1);
     
-    Actor actor1 = new Actor();
+    Actor actor1 = new Actor("Blanca Suarez");
     actor1.setNombre("Blanca Suarez");
 
-    Actor actor2 = new Actor();
+    Actor actor2 = new Actor("Yon Gonzalez");
     actor2.setNombre("Yon Gonzalez");
 
     serie1.elenco.add(actor1);
     serie1.elenco.add(actor2);
 
-    Clasificacion clasificacion = new Clasificacion();
+    Clasificacion clasificacion = new Clasificacion("TV MA", 17, "Contenido inadecuado para audiencias menores a 17 años");
     //clasificacion.tipo = "TV MA";
     clasificacion.setTipo("TV MA");
-   // clasificacion.edadMin = 17;
-   clasificacion.setEdadMin(17);
-    clasificacion.setDescripcion("Contenido inadecuado para audencias menores de 17 años");
+    //clasificacion.edadMin = 17;
+    clasificacion.setEdadMin(17);
+    clasificacion.setDescripcion("Contenido inadecuado para audiencias menores de 17 años");
 
     serie1.clasificacion = clasificacion;
 
-    Genero genero = new Genero ();
+    Genero genero = new Genero ("Drama", "algo de drama");
     //genero.descripcion = "Drama";
     genero.setDescripcion("Drama");
     //serie1.setGenero = genero;

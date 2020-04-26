@@ -1,6 +1,11 @@
 package app;
 
 public class Pelicula extends Contenido {
+
+    public Pelicula (Director director, int duracionEnMinutos){
+        this.director = director;
+        this.duracionEnMinutos = duracionEnMinutos;
+    }
     
     private Director director;
     private int duracionEnMinutos;

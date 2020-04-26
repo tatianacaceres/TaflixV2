@@ -2,6 +2,11 @@ package app;
 
 public class Genero {
 
+public Genero (String nombre, String descripcion){
+    this.nombre = nombre;
+    this.descripcion = descripcion;
+}
+
     private String nombre;
     private String descripcion;
     
