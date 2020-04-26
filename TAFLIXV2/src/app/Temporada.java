@@ -7,7 +7,8 @@ public class Temporada {
 
     public int numero;
     public List<Episodio>episodios = new ArrayList<>();
-
+    public List<Websodio>websodios = new ArrayList<>();
+    
     public Episodio getEpisodio(int numero){
             
     //Recorrer cada episodio
