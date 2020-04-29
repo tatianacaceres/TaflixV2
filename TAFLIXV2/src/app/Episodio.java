@@ -1,6 +1,9 @@
 package app;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import app.personas.Actor;
 
 public class Episodio {
 
@@ -17,7 +20,7 @@ public Episodio (int numero, String nombre, int duracionEnMinutos){
     private String nombre;
     private int duracionEnMinutos;
     private String descripcion;
-    public List <Actor> elenco;
+    private List <Actor>elenco = new ArrayList<>();
     private int año;
     
 //Getter y Setter = Getter: devuelve el valor de un atributo. Setter: le pone el valor al atributo
@@ -63,7 +66,13 @@ public void setAño(int año){
     this.año = año;
 }
 
+public List<Actor> getElenco(){
+    return this.elenco;
+}
 
+public void setElenco(List<Actor>elenco){
+    this.elenco = elenco;
+}
 
 public void reproducir(){
 System.out.println("Reproduciendo episodio " + this.numero + " " + this.nombre);

@@ -5,10 +5,29 @@ import java.util.List;
 
 public class Temporada {
 
-    public int numero;
-    public List<Episodio>episodios = new ArrayList<>();
-    public List<Websodio>websodios = new ArrayList<>();
-    
+    private int numero;
+    private List<Episodio>episodios = new ArrayList<>();
+    private List<Websodio>websodios = new ArrayList<>();
+
+    public int getNumero(){
+        return this.numero;
+    }
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+    public List<Episodio> getEpisodios(){
+        return this.episodios;
+    }
+    public void setEpisodios(List<Episodio> episodios){
+        this.episodios = episodios;
+    }
+    public List<Websodio> getWebsodios(){
+        return this.websodios;
+    }
+    public void setWebsodios(List<Websodio> websodios){
+        this.websodios = websodios;
+    }
+
     public Episodio getEpisodio(int numero){
             
     //Recorrer cada episodio

@@ -3,6 +3,8 @@ package app;
 import java.util.ArrayList;
 import java.util.List;
 
+import app.personas.Actor;
+
 public class Taflix {
 
     public List<Pelicula> peliculas = new ArrayList<>();
@@ -34,8 +36,8 @@ public class Taflix {
     Actor actor2 = new Actor("Yon Gonzalez");
     actor2.setNombre("Yon Gonzalez");
 
-    serie1.elenco.add(actor1);
-    serie1.elenco.add(actor2);
+    serie1.getElenco().add(actor1);
+    serie1.getElenco().add(actor2);
 
     Clasificacion clasificacion = new Clasificacion("TV MA", 17, "Contenido inadecuado para audiencias menores a 17 años");
     //clasificacion.tipo = "TV MA";
@@ -44,7 +46,7 @@ public class Taflix {
     clasificacion.setEdadMin(17);
     clasificacion.setDescripcion("Contenido inadecuado para audiencias menores de 17 años");
 
-    serie1.clasificacion = clasificacion;
+    serie1.setClasificacion(clasificacion);
 
     Genero genero = new Genero ("Drama", "algo de drama");
     //genero.descripcion = "Drama";
@@ -54,8 +56,8 @@ public class Taflix {
 
     // Serie 1 Temporadas Las chicas del cable
     Temporada t1 = new Temporada();
-    t1.numero = 1;
-    serie1.temporadas.add(t1);
+    t1.getTemporadas(1);
+    serie1.getTemporadas().add(t1);
 
     //Serie 1 Episodios Las chicas del cable TEMPORADA 
     Episodio epi = new Episodio(1, "Los sueños",54);
@@ -65,30 +67,30 @@ public class Taflix {
     //epi.numero = 1;
     //epi.duracionEnMinutos = 54;
     
-    t1.episodios.add(epi);
+    t1.getEpisodios().add(epi);
    epi = new Episodio(2, "Los recuerdos", 50);   
    // epi = new Episodio();
     //epi.nombre = "Los recuerdos";
     //epi.numero = 2;
     //epi.duracionEnMinutos = 50;
     
-    t1.episodios.add(epi);
+    t1.getEpisodios().add(epi);
 
     Temporada t2 = new Temporada ();
-    serie1.temporadas.add(t2);
-    t2.numero = 2;
+    serie1.getTemporadas().add(t2);
+    t2.setNumero(2);
 
     epi = new Episodio(1, "La eleccion", 50);
     //epi.nombre = "La eleccion";
     //epi.numero = 1;
     //epi.duracionEnMinutos = 50;
-    t2.episodios.add(epi);
+    t2.getEpisodios().add(epi);
 
     epi = new Episodio(2, "El pacto", 46);
     //epi.nombre = "El pacto";
     //epi.numero = 2;
     //epi.duracionEnMinutos = 46;
-    t2.episodios.add(epi);
+    t2.getEpisodios().add(epi);
 
     //WEBSODIO
     Websodio webi = new Websodio(20, "Episodio web","http://direccion.com", 30);
@@ -98,7 +100,7 @@ public class Taflix {
     //webi.duracionEnMinutos = 30;
     //webi.url = "http://direccion.com"
 
-    t2.episodios.add(webi);
+    t2.getEpisodios().add(webi);
 }
 }
 

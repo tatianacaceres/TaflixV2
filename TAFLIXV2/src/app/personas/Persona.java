@@ -1,6 +1,6 @@
-package app;
+package app.persona;
 
-public class Persona {
+public abstract class Persona {
 
     private String nombre;
     private String edad;
